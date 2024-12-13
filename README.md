@@ -24,8 +24,10 @@ cd grawards/backend
 
 2. Create a virtual environment and activate it:
 
+```sh
 python -m venv venv
 source venv/bin/activate
+```
 
 3. Install the dependencies:
 
@@ -47,7 +49,7 @@ docker compose -f docker-compose.dev.yml up --build
 
 2. The API will be available at http://localhost:8000
 
-## Makefile Commands
+### Makefile Commands
 
 The Makefile provides several commands to manage the application using Docker:
 
@@ -70,19 +72,20 @@ uvicorn app.main:app --reload
 
 2. The API will be available at http://localhost:8000.
 
-# Endpoints
+## Endpoints
 
 - GET / - Root endpoint to check if the API is online and its version
 - GET /intervals - Get the minimum and maximum intervals between wins for producers
 
-# Running Tests
+## Running Tests
 
 1. Run the tests:
 ```sh
 pytest
 ```
 
-# Project Structure
+## Project Structure
+```sh
 backend/
 ├── app/
 │   ├── __init__.py
@@ -99,6 +102,7 @@ backend/
 ├── Dockerfile.dev
 ├── requirements.txt
 └── .env
+```
 
 # License
 This project is licensed under the MIT License. See the LICENSE file for details.
