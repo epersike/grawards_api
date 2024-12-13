@@ -1,0 +1,5 @@
+[project]
+name = "grawards_api"
+version = "0.1.0"
+description = "Lista de indicados e vencedores da categoria Pior Filme do Golden Raspberry Awards"
+authors = ["Elton Persike <eltonpersike@gmail.com>"]
